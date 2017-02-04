@@ -116,5 +116,129 @@ footer > p > a {
 footer > p > a:hover {
     background-color: gold;
 }
+@media only screen and (max-width:50em) {
+
+html {
+    margin: 0.5em;
+}  
+body {
+        width: 50em;
+        margin: 0;
+    }
+header > h1 {
+    display: none;
+}
+header {
+    width: 30%;
+}
+nav {
+    width:70%;
+    height: 5em;
+    float: right;
+    border-right: none;
+    position: relative;
+    top: -8em;
+    right: 1em;
+    vertical-align: middle;
+}
+nav > ul > li {
+    padding: 0.5em;
+    display: inline;
+    font-size: 1.3em;
+}
+.post {
+    width: 70%;
+    position: relative;
+    top: -4em;
+}
+.post > article {
+    width: 80%;
+    margin: 0.5em 2em;
+    height: 24em;
+}
+.author {
+    width:29%;
+    border-left: none;
+    position: relative;
+    top: -3.5em;
+    right: 2em;
+    padding: 0;
+}
+}
+@media only screen and (max-width:33.33em) {
+    html {
+        margin:0;
+    }
+    body {
+        width: 33.33em;
+        margin: 0;
+        padding: 0;
+         }
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+  header > img {
+        width: 50%;
+        margin-left: 8.5em;
+    }
+    nav > ul > li {
+        font-size: 2em;
+        display: block;
+        text-align: center;
+    }
+    nav > ul {
+        padding: 0;
+    }
+     nav {
+        position: static;
+        float: none;
+        width: 100%;
+        display: block;
+        height: 18em;
+    }
+    .post {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    .post > article {
+        width:85%;
+    }
+    .author {
+        position: static;
+        height: 22em;
+        width: 100%;
+        display: block;
+    }
+    .author > img {
+        width:40%;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 15.6em;
+        position: static;
+    }
+    .author > p, h3 {
+        width: 40%;
+        font-size: 1.8em;
+        padding-bottom: 0.5em;
+        margin: 0;
+        position: relative;
+        left: 9em;
+        bottom: 11em;
+    }
+    .author > div {
+        width: 50%;
+        font-size: 1.3em;
+        position: relative;
+        left: 12em;
+        bottom: 14em
+    }
+    }
+  
+    
+    
+
+
     
 
