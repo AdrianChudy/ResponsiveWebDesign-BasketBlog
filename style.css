@@ -97,12 +97,13 @@ nav > ul > li > a:hover {
     border-radius: 0.5em;
     background-color: #F7D563;
     padding: 1%;
-    transition: background-color 2s ease 0s;
+    transition: all 1s ease;
     min-height: 23em;
 }
 .post > article:hover {
     background-color: yellowgreen;
     cursor: pointer;
+    transform: scale(1.03);
 }
 .author {
     width: 19%;
@@ -136,8 +137,8 @@ footer > p > a:hover {
 }
 @media only screen and (max-width:50em) {
     body {
-            margin: 0;
-            margin: 0.5em;
+        margin: 0;
+        margin: 0.5em;
         }
     header > h1 {
         display: none;
@@ -188,25 +189,62 @@ footer > p > a:hover {
         display: block;
     }
     nav {
-        width: 100%;
+        width: 60%;
         display: block;
+        margin: 0 auto;
+        margin-top: 0.5em;
+    }
+    nav > ul {
         margin: 0;
     }
-    nav > ul > li {
+    nav > ul > li  {
+        visibility: hidden;
+        font-size: 0.1em;
+    }
+    nav:hover > ul > li {
+        transition: all 1s ease 0.5s;
+        transform: scale (1.2);
+        cursor: pointer;
         display: block;
         text-align: center;
-        font-size: 2em;
-        padding: 2%;
+        padding: 0.5em;
+        visibility: visible;
+        font-size: 1.8em;
+        position: relative;
+        top: -2em;
+        margin: 0 auto;
+    }
+    nav::before {
+        cursor: pointer;
+        content: '';
+        width: 6em;
+        height: 6em;
+        display: block;
+        background: transparent url(img/rwd-icon.png) no-repeat;
+        background-size: auto 6em;
+        margin: 0 auto;
+        border: solid 0.2em black;
+        background-color: #F7D563;
+        border-radius: 0.5em;
+    }
+    nav:hover::before {
+        transition: all 1s ease;     
+        visibility: hidden;
     }
     .post {
         width: 100%;
         display: block;
         padding: 5%;
+        padding-top: 0;
     }
     .post > article {
         width: 100%;
         padding: 5%;
         margin: 1%;
+        transition: all 1s ease;
+    }
+    .post > article:hover {
+        transform: scale(0.95);
     }
     .author {
         width: 100%;
